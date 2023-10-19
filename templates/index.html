@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    </head>
+    <body>
+        <div hx-target="this", hx-swap="outerHTML">
+            <div><label>First Name</label>: {{first_name}}</div>
+            <div><label>Last Name</label>: {{last_name}}</div>
+            <div><label>Email</label>: {{email}}</div>
+
+            <button hx-get="/contact/1/edit" class="btn btn-primary">
+                Click to edit
+            </button>
+        </div>
+    </body>
+</html>
+
